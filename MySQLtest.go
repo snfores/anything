@@ -30,7 +30,7 @@ type NewMysql struct {
 func main() {
 
 	val := Newmenu{name: "タバスコいりカクテル", price: 800, starttime: "2015-3-20"}
-	opt := NewMysql{tablename: "menu", dbname: "nyumon", user: "nyuser", pass: "nypass"}
+	opt := NewMysql{tablename: "menu", dbname: "nyumon", user: "ex_user", pass: "ex_pass"}
 
 	//今回はlocalhostなのでuser名:password@/db名でOK
 	db, err := sql.Open("mysql", opt.user+":"+opt.pass+"@/"+opt.dbname) //opt.user+":"+opt.pass+"@"+opt.protocol+"("+opt.address+")/"+opt.db
