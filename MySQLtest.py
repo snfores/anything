@@ -23,7 +23,7 @@ def mysql_select(cur_name,tablename):
 
 #localhostのMySQLのDB名:nyumonにユーザー名:ex_user password:ex_passで接続し,テーブル名:menuに対して操作する
 def main():
-    mysql_url = urlparse("mysql://nyuser:nypass@localhost:3306/nyumon")
+    mysql_url = urlparse("mysql://ex_user:ex_pass@localhost:3306/nyumon")#デフォルトが3306
 
     conn = mysql.connector.connect(
         host = mysql_url.hostname or "localhost",
